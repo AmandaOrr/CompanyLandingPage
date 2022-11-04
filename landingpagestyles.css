@@ -6,14 +6,21 @@ body{
     margin: 0;
     padding: 0;
     background-color: #faf2eb;
+   
 }
 
 a, p, input{
-  font-family: 'Lora', serif;;
+  font-family: 'Lora', serif;
+  
 }
 
 h1, h2, h3{
   font-family: 'Playfair Display', serif;
+  color: #392D2E;
+}
+
+nav a{
+  color:#929982;
 }
 
 
@@ -26,29 +33,42 @@ h1, h2, h3{
     display: flex;
     justify-content: space-between;
     background-color: #929982;
+    
   }
 
   header ul{
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
+    margin-top: 5%;
   }
 
-  header li{
+  header li a{
     padding: 1rem;
+    margin: 5% 0;
+    color: #392D2E;
   }
- 
+
+  header input{
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 2px;
+
+  }
 
 
   nav{
       background-color: #253125;
-      padding: .25%;
+      padding: .1%;
+      font-size: 18px;
       
   }
   nav ul{
       display: flex;
       list-style-type: none;
       justify-content:flex-end;
+      align-content: center;
       gap: 8%;
        
   }
@@ -57,11 +77,14 @@ h1, h2, h3{
       margin-right: 2%;
   }
 
+
+
   #site-nag{
     text-align: center;
-    
     background-color: #002500;
     color:#929982;
+    font-size: 20px;
+    padding: .2%;
   }
   
   #hero{
@@ -80,12 +103,18 @@ h1, h2, h3{
       box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
   }
   
+  #featuredHeading{
+    text-align: center;
+    margin-top: 10%;
+    font-size: 32px;
+  } 
+
   #product-cards{
       display: flex;
       flex-direction: column;
       gap: 5%;
       align-items: center;
-      margin-top: 15%;
+      margin-top: 5%;
       margin-bottom: 10%;
       text-align: center;
       
@@ -95,6 +124,22 @@ h1, h2, h3{
   #card{
     box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
     margin-bottom: 5%;
+    padding: 1%;
+    border: 1px solid #929982;
+    background-color:  #faf2eb;
+  }
+
+  #card img{
+    border: 10px solid #392D2E;
+  }
+
+  #card a{
+    font-size: 18px;
+    background-color: #002500;
+    color: #929982;
+    font-weight: 600;
+    padding: 3% 5%;
+    box-shadow: 11px 18px 26px -3px
   }
   
   
@@ -130,6 +175,7 @@ h1, h2, h3{
     #seasonheading{
       text-align: center;
       margin-top: 10%;
+      font-size: 32px;
     }
   
     #product-square-section{
@@ -148,12 +194,11 @@ h1, h2, h3{
     #product-square-section a{
       position: relative;
       top: 50%;
+      font-size: 18px;
       background-color: #002500;
       color: #929982;
       font-weight: 600;
-      padding: 3% 5%;
-      
-      
+      padding: 3% 5%;  
     }
   
     #productSquare1{
@@ -161,6 +206,7 @@ h1, h2, h3{
       width: 300px;
       height: 300px;
       box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
+      border: 10px solid #392D2E;
     }
   
     #productSquare2{
@@ -168,6 +214,7 @@ h1, h2, h3{
       width: 300px;
       height: 300px;
       box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
+      border: 10px solid #392D2E;
     }
 
     #productSquare3{
@@ -175,6 +222,7 @@ h1, h2, h3{
       width: 300px;
       height: 300px;
       box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
+      border: 10px solid #392D2E;
     }
 
     #productSquare4{
@@ -182,11 +230,13 @@ h1, h2, h3{
       width: 300px;
       height: 300px;
       box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
+      border: 10px solid #392D2E;
     }
   
     footer{
       display: flex;
       justify-content: flex-start;
+      flex-direction: column;
       gap: 15%;
       margin: 5%;
       padding-top: 5%;
@@ -197,19 +247,47 @@ h1, h2, h3{
       list-style-type: none;
     }
 
-
+    footer a{
+      color: #392D2E;
+    }
 
 }
 
 /* mobile landscape layout (480px to 767px) */
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 625px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #929982;
+    
+  }
+
+  header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+  }
+
+  header li a{
+    padding: 1rem;
+    color: #392D2E;
+  }
+
+  header input{
+    width: 150px;
+    margin-right: 2px;
+  }
+ 
+  
   #product-cards{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 5%;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 10%;
     text-align: center;
     
@@ -228,18 +306,52 @@ h1, h2, h3{
     text-align: center;
     
 
+  }
+
+  footer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15%;
+    margin: 5%;
+    padding-top: 5%;
+    border-top: 2px solid black;
   }
 }
 
 /* tablet portrait layout (768px to 959px) */
 @media only screen and (min-width: 768px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #929982;
+    
+  }
+
+  header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+  }
+
+  header li a{
+    padding: 1rem;
+    color: #392D2E;
+  }
+
+  header input{
+    width: 150px;
+    margin-right: 2px;
+  }
   #product-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 5%;
     justify-content: space-evenly;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 10%;
     text-align: center;
     
@@ -259,23 +371,64 @@ h1, h2, h3{
     
 
   }
+
+  footer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15%;
+    margin: 5%;
+    padding-top: 5%;
+    border-top: 2px solid black;
+  }
 }
 
 /* tablet landscape and desktop layout (960px and up) */
 @media only screen and (min-width: 960px) {
+  header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #929982;
+    
+  }
+
+  header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+  }
+
+  header li a{
+    padding: 1rem;
+    color: #392D2E;
+  }
+
+  header input{
+    width: 150px;
+    margin-right: 2px;
+  }
+  
+  
+  
   #product-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 5%;
+    gap: 2%;
     justify-content: space-evenly;
-    margin-top: 15%;
+    margin-top: 5%;
     margin-bottom: 10%;
     text-align: center;
     
 }
   
-  
+#heroimage{
+  width: 75%;
+  max-width: 100%;
+  box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
+}
   
   #product-square-section{
     display: flex;
@@ -288,6 +441,16 @@ h1, h2, h3{
     text-align: center;
     
 
+  }
+
+  footer{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15%;
+    margin: 5%;
+    padding-top: 5%;
+    border-top: 2px solid black;
   }
 
 }
