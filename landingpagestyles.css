@@ -117,16 +117,17 @@ nav a{
       margin-top: 5%;
       margin-bottom: 10%;
       text-align: center;
-      
+    
       
   }
 
   #card{
     box-shadow: 11px 18px 26px -3px rgba(207,172,166,0.78);
     margin-bottom: 5%;
-    padding: 1%;
+    padding: 1% 1% 3%;
     border: 1px solid #929982;
     background-color:  #faf2eb;
+    
   }
 
   #card img{
@@ -139,7 +140,7 @@ nav a{
     color: #929982;
     font-weight: 600;
     padding: 3% 5%;
-    box-shadow: 11px 18px 26px -3px
+    box-shadow: 11px 18px 26px -3px;
   }
   
   
@@ -280,7 +281,7 @@ nav a{
     margin-right: 2px;
   }
  
-  
+ 
   #product-cards{
     display: flex;
     flex-direction: column;
@@ -356,9 +357,8 @@ nav a{
     text-align: center;
     
 }
-  
-  
-  
+
+   
   #product-square-section{
     display: flex;
     flex-direction: row;
@@ -410,8 +410,7 @@ nav a{
     margin-right: 2px;
   }
   
-  
-  
+
   #product-cards{
     display: flex;
     flex-direction: row;
@@ -423,7 +422,7 @@ nav a{
     text-align: center;
     
 }
-  
+ 
 #heroimage{
   width: 75%;
   max-width: 100%;
@@ -451,6 +450,13 @@ nav a{
     margin: 5%;
     padding-top: 5%;
     border-top: 2px solid black;
+  }
+
+  #footermenu3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
   }
 
 }
